@@ -473,6 +473,7 @@ type BuildImageOptions struct {
 	NetworkMode         string             `qs:"networkmode"`
 	InactivityTimeout   time.Duration      `qs:"-"`
 	CgroupParent        string             `qs:"cgroupparent"`
+	BuildBinds          []string           `qs:"buildbinds"`
 	Context             context.Context
 }
 
